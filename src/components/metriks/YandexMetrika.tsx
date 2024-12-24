@@ -1,7 +1,7 @@
 'use client';
 
-import React from 'react';
 import { YandexMetricaProvider } from 'next-yandex-metrica';
+import React from 'react';
 
 import { env } from '@/env.mjs';
 

@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/alert-dialog';
 import { env } from '@/env.mjs';
 
-const AlertDialogDemo = () => {
+const AlertDialogDemo = async () => {
   return (
     <>
       <div className='flex flex-col'>{env.NEXT_PUBLIC_API_URL}</div>
