@@ -7,22 +7,11 @@ import eslintPluginImport from 'eslint-plugin-import';
 import prettier from 'eslint-plugin-prettier';
 import eslintPluginReact from 'eslint-plugin-react';
 import eslintPluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
-import eslintPluginTailwindCSS from 'eslint-plugin-tailwindcss';
 import globals from 'globals';
 
 export default [
   // JS
   js.configs.recommended,
-
-  // TailwindCSS
-  {
-    plugins: {
-      tailwindcss: eslintPluginTailwindCSS
-    },
-    rules: {
-      ...eslintPluginTailwindCSS.configs.recommended.rules
-    }
-  },
 
   // react-query
 
@@ -91,15 +80,7 @@ export default [
       '@typescript-eslint': tsPlugin
     },
     rules: {
-      ...tsPlugin.configs.recommended.rules,
-      '@typescript-eslint/naming-convention': [
-        'error',
-        {
-          format: ['PascalCase'],
-          prefix: ['I'],
-          selector: 'interface'
-        }
-      ]
+      ...tsPlugin.configs.recommended.rules
     }
   },
 

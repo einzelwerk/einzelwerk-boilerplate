@@ -1,5 +1,3 @@
-'use client';
-
 import {
   AlertDialog,
   AlertDialogAction,
@@ -7,7 +5,8 @@ import {
   AlertDialogContent,
   AlertDialogFooter,
   AlertDialogHeader,
-  AlertDialogTitle
+  AlertDialogTitle,
+  AlertDialogTrigger
 } from '@/components/ui/alert-dialog';
 import { env } from '@/env.mjs';
 
@@ -16,7 +15,9 @@ const AlertDialogDemo = async () => {
     <>
       <div className='flex flex-col'>{env.NEXT_PUBLIC_API_URL}</div>
       <div className=''>{process.env.NODE_ENV}</div>
+      <div className='flex flex-col lg:block'></div>
       <AlertDialog>
+        <AlertDialogTrigger>qwe</AlertDialogTrigger>
         <AlertDialogContent>
           <span>qwe</span>
           <span>qwe</span>
