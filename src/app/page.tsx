@@ -5,8 +5,7 @@ import {
   AlertDialogContent,
   AlertDialogFooter,
   AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger
+  AlertDialogTitle
 } from '@/components/ui/alert-dialog';
 import { env } from '@/env.mjs';
 
@@ -17,7 +16,6 @@ const AlertDialogDemo = async () => {
       <div className=''>{process.env.NODE_ENV}</div>
       <div className='flex flex-col lg:block'></div>
       <AlertDialog>
-        <AlertDialogTrigger>qwe</AlertDialogTrigger>
         <AlertDialogContent>
           <span>qwe</span>
           <span>qwe</span>
